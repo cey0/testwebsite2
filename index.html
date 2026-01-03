@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!--========= Required meta tags =========-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Feature-Policy 'autoplay' is not supported in modern browsers. If present, remove or replace. -->
+
+    <title>Konseling HIV - IMS & VCT</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <link rel="stylesheet" href="assets/css/mousecursor.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/custom-fonts.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+
+    <style>
+      /* Sticky WhatsApp Button */
+      .sticky-wa-btn {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        background: #25d366;
+        color: #fff;
+        padding: 12px 22px 12px 18px;
+        border-radius: 32px;
+        box-shadow: 0 4px 16px rgba(37, 211, 102, 0.18);
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        transition: background 0.2s, box-shadow 0.2s;
+      }
+      .sticky-wa-btn:hover,
+      .sticky-wa-btn:focus {
+        background: #128c7e;
+        color: #fff;
+        box-shadow: 0 6px 24px rgba(18, 140, 126, 0.18);
+        text-decoration: none;
+      }
+      .sticky-wa-btn .fab.fa-whatsapp {
+        font-size: 1.5em;
+        margin-right: 6px;
+      }
+      @media (max-width: 600px) {
+        .sticky-wa-btn {
+          right: 12px;
+          bottom: 12px;
+          padding: 10px 16px 10px 14px;
+          font-size: 1rem;
+        }
+        .sticky-wa-btn .fab.fa-whatsapp {
+          font-size: 1.2em;
+        }
+      }
+      /* ...existing code... */
+      .xb-backtotop {
+        position: fixed;
+        right: 24px;
+        bottom: 80px; /* Place it above the WhatsApp button */
+        z-index: 9998;
+      }
+      @media (max-width: 600px) {
+        .xb-backtotop {
+          right: 12px;
+          bottom: 70px; /* Adjust for mobile */
+        }
+      }
+      /* ...existing code... */
+    </style>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body class="personal_therapist">
+    <a href="https://wa.me/6281234567890" target="_blank" class="sticky-wa-btn">
+      <i class="fab fa-whatsapp"></i> Chat WhatsApp
+    </a>
+
+    <!-- Preloader - Start -->
+    <div id="preloader">
+      <div id="loader" class="loader">
+        <div class="loader-container">
+          <div class="loader-icon">
+            <img src="assets/img/logo/preloader.svg" alt="Mindycoach" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader - End -->
+
+    <div class="body_wrap o-clip">
+      <p class="hero-top-content text-center">
+        Kontak dan konsultasi online dengan Konselor HIV (IMS & VCT) via
+        Whatsapp :
+        <a
+          href="https://api.whatsapp.com/send/?phone=628112956579&text=Halo%2C+konseling+HIV&type=phone_number&app_absent=0"
+          target="_blank"
+          >Konsultasi</a
+        >
+      </p>
+      <!-- header start -->
+      <header
+        id="xb-header-area"
+        class="header-area header-style header-transparent"
+      >
+        <div class="xb-header stricky">
+          <div class="container-fluid p-0">
+            <div class="header__wrap ul_li_between glass">
+              <div class="xb-header-logo">
+                <a href="index.html" class="logo1">
+                  <img
+                    src="https://konselinghiv.com/storage/2021/06/logo3.png"
+                    alt="KonselingHIV.com"
+                    style="height: 48px"
+                  />
+                </a>
+              </div>
+              <div class="main-menu__wrap navbar navbar-expand-xl p-0">
+                <nav class="main-menu collapse navbar-collapse">
+                  <ul>
+                    <li class="active text-black">
+                      <a href="#hero"><span>Beranda</span></a>
+                    </li>
+                    <li>
+                      <a href="#layanan text-black"><span>Layanan</span></a>
+                    </li>
+                    <li>
+                      <a href="#tentang text-black"
+                        ><span>Tentang Kami</span></a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-bar-mobile side-menu d-xl-none">
+                <a class="xb-nav-mobile" href="javascript:void(0);">
+                  <i class="far fa-bars"></i>
+                </a>
+              </div>
+              <div class="header-btn">
+                <a
+                  href="https://wa.me/6281234567890"
+                  class="thm-btn"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span>Konsultasi Gratis</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- main area start -->
+      <main>
+        <!-- hero start -->
+        <section class="hero hero-style-one wow" id="hero">
+          <div class="hero-inner hero-height pos-rel radius-20">
+            <div
+              class="hero-one-image bg_img"
+              data-background="assets/img/banner.webp"
+            ></div>
+            <div class="container-fluid px-50">
+              <div
+                class="row align-items-end justify-content-between mt-none-30"
+              >
+                <div class="col-xl-7 mt-30">
+                  <div class="hero-content">
+                    <!-- <span class="xb-item--subtitle wow fadeInUp" data-wow-delay="300ms" -->
+                    <!--     data-wow-duration="400ms">Konseling HIV</span> -->
+                    <h2
+                      class="xb-item--title wow fadeInUp"
+                      data-wow-delay="450ms"
+                      data-wow-duration="400ms"
+                      data-cursor="-opaque"
+                    >
+                      konseling HIV, Infeksi Menular Seksual (IMS), dan
+                      Voluntary Counselling
+                    </h2>
+                    <p
+                      class="xb-item--content wow fadeInUp"
+                      data-wow-delay="600ms"
+                      data-wow-duration="400ms"
+                    >
+                      <strong>Ira Fatmawati, S.Kep.,Ns</strong>, konselor HIV
+                      terlatih dan berpengalaman melakukan konseling sejak tahun
+                      2015.
+                    </p>
+                    <div
+                      class="hero-btn wow fadeInUp"
+                      data-wow-delay="700ms"
+                      data-wow-duration="400ms"
+                    >
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=628112956579&text=Halo%2C+konseling+HIV&type=phone_number&app_absent=0"
+                        target="_blank"
+                        class="thm-btn"
+                      >
+                        <span>Konsultasi via Whatsapp</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-5 mt-30">
+                  <div
+                    class="hero-info glass wow fadeInRight"
+                    data-wow-delay="500ms"
+                    data-wow-duration="500ms"
+                  >
+                    <div class="xb-item--image">
+                      <img src="assets/img/profil.jpg" alt="" />
+                    </div>
+                    <div class="xb-item--content">
+                      <h3 class="xb-item--title">
+                        Kontak dan konsultasi online
+                      </h3>
+                      <p class="xb-item--desc">
+                        Ira Fatmawati, S.Kep.,Ns, Konselor HIV (IMS & VCT) via
+                        Whatsapp
+                      </p>
+                      <a class="xb-item--btn" href="https://konselinghiv.com/"
+                        >Selengkapnya</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- hero end -->
+
+        <!-- service start -->
+        <section
+          class="service pos-rel z-1 radius-20 mt-30 pt-130 pb-130 gradient-bg-2"
+          id="layanan"
+        >
+          <div class="service-circle-shape">
+            <img src="assets/img/shape/service_bg.png" alt="" />
+          </div>
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-lg-9">
+                <div class="about-content text-center mb-55">
+                  <div class="sec-title">
+                    <span class="xb-item--subtitle"
+                      >Layanan Konseling & Pendampingan HIV (IMS & VCT)</span
+                    >
+                    <h2 class="xb-item--title mb-15" data-cursor="-opaque">
+                      Didampingi Konselor Terlatih & Bersertifikat
+                    </h2>
+                    <p class="xb-item--content">
+                      Pendampingan konseling HIV, Infeksi Menular Seksual (IMS),
+                      dan VCT yang aman, rahasia, dan berbasis empati untuk
+                      membantu Anda memahami kondisi kesehatan dan mengambil
+                      keputusan terbaik.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-inner">
+              <div class="row mt-none-30">
+                <div class="col-lg-4 mt-30">
+                  <div
+                    class="service-item wow fadeInUp"
+                    data-wow-delay="0ms"
+                    data-wow-duration="400ms"
+                  >
+                    <div class="xb-item--icon">
+                      <img src="assets/img/icon/service_icon1.gif" alt="" />
+                    </div>
+                    <h3 class="xb-item--title border-effect">
+                      <a href="service-details.html"
+                        >Konseling IMS (Infeksi Menular Seksual)</a
+                      >
+                    </h3>
+                    <p class="xb-item--content">
+                      Membantu memahami gejala, risiko penularan, pencegahan,
+                      serta langkah penanganan IMS secara tepat dan bertanggung
+                      jawab.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-30">
+                  <div
+                    class="service-item middle wow fadeInUp"
+                    data-wow-delay="150ms"
+                    data-wow-duration="400ms"
+                  >
+                    <div class="xb-item--icon">
+                      <img src="assets/img/icon/service_icon2.gif" alt="" />
+                    </div>
+                    <h3 class="xb-item--title border-effect">
+                      <a href="service-details.html">Konseling Pra Tes VCT</a>
+                    </h3>
+                    <p class="xb-item--content">
+                      Pendampingan sebelum tes HIV untuk memberikan edukasi,
+                      kesiapan mental, serta pemahaman menyeluruh tentang proses
+                      dan hasil tes.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-30">
+                  <div
+                    class="service-item wow fadeInUp"
+                    data-wow-delay="300ms"
+                    data-wow-duration="400ms"
+                  >
+                    <div class="xb-item--icon">
+                      <img src="assets/img/icon/service_icon3.gif" alt="" />
+                    </div>
+                    <h3 class="xb-item--title border-effect">
+                      <a href="service-details.html">Konseling Pasca Tes VCT</a>
+                    </h3>
+                    <p class="xb-item--content">
+                      Pendampingan setelah tes HIV untuk membantu memahami
+                      hasil, langkah pengobatan, dukungan psikologis, dan
+                      perencanaan hidup ke depan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-btn text-center mt-75">
+              <a
+                href="https://api.whatsapp.com/send/?phone=628112956579&text=Halo%2C+konseling+HIV&type=phone_number&app_absent=0"
+                target="_blank"
+                class="thm-btn thm-btn--primary"
+              >
+                <span>Konsultasi</span>
+              </a>
+            </div>
+          </div>
+          <div class="service-shape">
+            <div class="shape shape--1">
+              <img src="assets/img/shape/srv_shape1.png" alt="" />
+            </div>
+            <div class="shape shape--2">
+              <img src="assets/img/shape/srv_shape2.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- service end -->
+
+        <!-- video section start -->
+        <section
+          class="video-section pos-rel z-1 radius-20 mt-30 pt-130 pb-130"
+          data-bg-color="#f8f9fa"
+        >
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-lg-9">
+                <div class="sec-title text-center mb-70">
+                  <span class="xb-item--subtitle">Video Edukasi</span>
+                  <h2 class="xb-item--title mb-15" data-cursor="-opaque">
+                    Memahami HIV & Konseling VCT
+                  </h2>
+                  <p class="xb-item--content">
+                    Tonton video edukasi untuk memahami lebih dalam tentang HIV,
+                    proses konseling, dan pentingnya deteksi dini
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+              <!-- Video Card 1 -->
+              <div class="col-lg-6 col-md-6">
+                <div
+                  class="video-card wow fadeInUp"
+                  data-wow-delay="0ms"
+                  data-wow-duration="500ms"
+                >
+                  <div class="video-badge">Shorts</div>
+                  <div class="video-wrapper">
+                    <iframe
+                      src="https://www.youtube.com/embed/2TGqH9bE4Js"
+                      title="HIV Awareness Short Video"
+                      allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    >
+                    </iframe>
+                    <div class="video-play-overlay">
+                      <div class="play-icon">
+                        <svg viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video-info">
+                    <h4>Pengenalan HIV & Konseling</h4>
+                    <p>
+                      Video singkat tentang pentingnya konseling HIV dan langkah
+                      awal yang perlu diketahui
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video Card 2 -->
+              <div class="col-lg-6 col-md-6">
+                <div
+                  class="video-card wow fadeInUp"
+                  data-wow-delay="150ms"
+                  data-wow-duration="500ms"
+                >
+                  <div class="video-badge">Video Lengkap</div>
+                  <div class="video-wrapper">
+                    <iframe
+                      src="https://www.youtube.com/embed/qa385AwYzrM"
+                      title="HIV Counseling Full Video"
+                      allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    >
+                    </iframe>
+                    <div class="video-play-overlay">
+                      <div class="play-icon">
+                        <svg viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video-info">
+                    <h4>Proses Konseling VCT Lengkap</h4>
+                    <p>
+                      Panduan lengkap tentang proses konseling VCT, dari pra-tes
+                      hingga pasca-tes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-60">
+              <a
+                href="https://api.whatsapp.com/send/?phone=628112956579&text=Halo%2C+konseling+HIV&type=phone_number&app_absent=0"
+                target="_blank"
+                class="thm-btn thm-btn--primary"
+              >
+                <span>Tanya Sekarang</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- video section end -->
+
+        <!-- funfact start -->
+        <section
+          class="funfact pos-rel z-1 radius-20 mt-30"
+          id="tentang"
+          data-bg-color="#A04444"
+        >
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="funfact-image">
+                  <div class="funfact-image-inner">
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_01.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_02.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_03.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_04.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_01.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_02.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_03.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_04.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_01.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_02.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_03.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_04.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="funfact-image-inner marquee-2">
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_05.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_06.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_07.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_08.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_05.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_06.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_07.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_08.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_05.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_06.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_07.png" alt="" />
+                    </div>
+                    <div class="xb-item--img">
+                      <img src="assets/img/funfact/ff_08.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="funfact-content pt-150 pb-150 wow fadeIn"
+                  data-wow-duration="400ms"
+                >
+                  <div class="sec-title sec-title--white mb-55">
+                    <span class="xb-item--subtitle"
+                      >Mengapa Konseling di Sini</span
+                    >
+                    <h2 class="xb-item--title mb-20" data-cursor="-opaque">
+                      Didampingi dengan Empati, Bukan Penghakiman
+                    </h2>
+                    <p class="xb-item--content">
+                      Konseling HIV dan IMS bukan hanya tentang hasil
+                      pemeriksaan, tetapi juga tentang rasa aman, didengar, dan
+                      dipahami. Setiap proses konseling dilakukan dengan
+                      pendekatan empati, komunikasi yang terbuka, serta dukungan
+                      psikologis yang berkelanjutan.
+                    </p>
+                  </div>
+                  <ul class="funfact-list list-unstyled">
+                    <li>
+                      <span><img src="assets/img/icon/ff_01.svg" alt="" /></span
+                      >Konseling Berbasis Empati
+                    </li>
+                    <li>
+                      <span><img src="assets/img/icon/ff_02.svg" alt="" /></span
+                      >Edukasi yang Mudah Dipahami
+                    </li>
+                    <li>
+                      <span><img src="assets/img/icon/ff_03.svg" alt="" /></span
+                      >Pendampingan Berkelanjutan
+                    </li>
+                  </ul>
+                  <div class="funfact-btn mt-60">
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=628112956579&text=Halo%2C+konseling+HIV&type=phone_number&app_absent=0"
+                      target="_blank"
+                      class="thm-btn"
+                    >
+                      <span>Konsultasi</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="funfact-shape">
+            <img src="assets/img/shape/ff_shape.png" alt="" />
+          </div>
+        </section>
+        <!-- funfact end -->
+
+        <!-- testimonial start -->
+        <section
+          class="testimonial pos-rel z-1 gradient-bg pt-130 pb-130 radius-20 mt-30"
+        >
+          <div class="container-fluid">
+            <div class="sec-title text-center mb-55">
+              <span class="xb-item--subtitle">Testimoni</span>
+              <h2 class="xb-item--title" data-cursor="-opaque">
+                Apa Kata Mereka
+              </h2>
+            </div>
+            <div class="testimonial-inner">
+              <div
+                class="testimonial-slider swiper-container"
+                data-cursor-text="Drag"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="xb-item--info">
+                        <div class="xb-item--quote">
+                          <img src="assets/img/icon/tm_quote.svg" alt="" />
+                        </div>
+                        <h3 class="xb-item--title">
+                          Saya tes VCT karena pasangan mengidap penyakit. Proses
+                          konseling yang sudah dijalani bersama konselor Ira
+                          Fatmawati, S.Kep.,Ns sangat baik.
+                        </h3>
+                      </div>
+                      <div class="xb-item--author">
+                        <div class="xb-item--author-info">
+                          <h3 class="xb-item--name">S</h3>
+                          <span class="xb-item--desig">Pasien</span>
+                        </div>
+                      </div>
+                      <div class="xb-item--shape">
+                        <img src="assets/img/shape/tm_shape2.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="xb-item--info">
+                        <div class="xb-item--quote">
+                          <img src="assets/img/icon/tm_quote.svg" alt="" />
+                        </div>
+                        <h3 class="xb-item--title">
+                          Ingin mengetahui kondisi badan dan tenteng hiv.
+                          Konselor Ira Fatmawati pelayanannya baik, menjelaskan
+                          dengan detail serta mudah dipahami dalam menjelaskan.
+                        </h3>
+                      </div>
+                      <div class="xb-item--author">
+                        <div class="xb-item--author-info">
+                          <h3 class="xb-item--name">K</h3>
+                          <span class="xb-item--desig">Pasien</span>
+                        </div>
+                      </div>
+                      <div class="xb-item--shape">
+                        <img src="assets/img/shape/tm_shape3.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="xb-item--info">
+                        <div class="xb-item--quote">
+                          <img src="assets/img/icon/tm_quote.svg" alt="" />
+                        </div>
+                        <h3 class="xb-item--title">
+                          Pertama ragu tapi bu Ira ngasih pengarahan-pengarahan,
+                          saya jadi nggak ragu lg. Pelayanannya baik dan
+                          penyampaiannya jelas.
+                        </h3>
+                      </div>
+                      <div class="xb-item--author">
+                        <div class="xb-item--author-info">
+                          <h3 class="xb-item--name">N</h3>
+                          <span class="xb-item--desig">Pasien</span>
+                        </div>
+                      </div>
+                      <div class="xb-item--shape">
+                        <img src="assets/img/shape/tm_shape2.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="xb-item--info">
+                        <div class="xb-item--quote">
+                          <img src="assets/img/icon/tm_quote.svg" alt="" />
+                        </div>
+                        <h3 class="xb-item--title">
+                          Selama proses konseling bersama Ira Fatmawati,
+                          S.Kep.,Ns saya jadi tahu kndisi kesehatan saya, smpai
+                          sekarang pun masih konseling bersama beliau.
+                        </h3>
+                      </div>
+                      <div class="xb-item--author">
+                        <div class="xb-item--author-info">
+                          <h3 class="xb-item--name">H</h3>
+                          <span class="xb-item--desig">Pasien</span>
+                        </div>
+                      </div>
+                      <div class="xb-item--shape">
+                        <img src="assets/img/shape/tm_shape3.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-btn text-center mt-80">
+              <a
+                href="https://api.whatsapp.com/send/?phone=628112956579&text=Halo%2C+konseling+HIV&type=phone_number&app_absent=0"
+                target="_blank"
+                class="thm-btn thm-btn--primary"
+              >
+                <span>Konsultasi</span>
+              </a>
+            </div>
+          </div>
+          <div class="testimonial-shape">
+            <img src="assets/img/shape/testimonial_shape.png" alt="" />
+          </div>
+        </section>
+        <!-- testimonial end -->
+      </main>
+      <!-- main area end -->
+
+      <!-- footer strt -->
+
+      <footer class="site-footer">
+        <div class="container-fluid p-0">
+          <div class="footer-wrap bg-primary">
+            <div class="row">
+              <div class="col-lg-9">
+                <div class="footer-inner pos-rel z-1">
+                  <div class="footer-logo mb-85">
+                    <a href="index.html"
+                      ><img src="assets/img/logo/logo-footer.svg" alt=""
+                    /></a>
+                  </div>
+
+                  <h2 class="footer-title mt-75" data-cursor="-opaque">
+                    Kenali Kondisi.<span>Dapatkan Dukungan.</span> <br />Hidup
+                    Lebih Baik.
+                  </h2>
+                  <div class="footer-shape">
+                    <img src="assets/img/shape/footer_shape.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer-widget">
+                  <ul class="footer-links list-unstyled">
+                    <li>
+                      <a href="about.html"
+                        >About Me
+                        <span
+                          ><svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 8V9H19V8V7H0V8Z"
+                              fill="#FFA6A6"
+                              fill-opacity="0.5"
+                            /></svg></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="services.html"
+                        >My Services
+                        <span
+                          ><svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 8V9H19V8V7H0V8Z"
+                              fill="#FFA6A6"
+                              fill-opacity="0.5"
+                            /></svg></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#!"
+                        >Couples counseling
+                        <span
+                          ><svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 8V9H19V8V7H0V8Z"
+                              fill="#FFA6A6"
+                              fill-opacity="0.5"
+                            /></svg></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#!"
+                        >Trauma- care
+                        <span
+                          ><svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 8V9H19V8V7H0V8Z"
+                              fill="#FFA6A6"
+                              fill-opacity="0.5"
+                            /></svg></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#!"
+                        >Depression & mood
+                        <span
+                          ><svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 8V9H19V8V7H0V8Z"
+                              fill="#FFA6A6"
+                              fill-opacity="0.5"
+                            /></svg></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#!"
+                        >Free Consultation
+                        <span
+                          ><svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 8V9H19V8V7H0V8Z"
+                              fill="#FFA6A6"
+                              fill-opacity="0.5"
+                            /></svg></span
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#!"
+                        >Terms & Conditons
+                        <span
+                          ><svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 8V9H19V8V7H0V8Z"
+                              fill="#FFA6A6"
+                              fill-opacity="0.5"
+                            /></svg></span
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="footer-bottom ul_li_between">
+              <div class="footer-copyright">
+                Copyright © 2025 All Rights Reserved
+              </div>
+              <ul class="social-links ul_li">
+                <li>
+                  <a href="#!"
+                    ><svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.2719 1.58691H18.0831L11.9414 8.60649L19.1666 18.1586H13.5093L9.07834 12.3653L4.00827 18.1586H1.19534L7.76451 10.6503L0.833313 1.58691H6.63424L10.6395 6.88219L15.2719 1.58691ZM14.2852 16.4759H15.843L5.78781 3.18119H4.1162L14.2852 16.4759Z"
+                        fill="#304049"
+                      /></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+              <ul class="footer-nav-links ul_li">
+                <li><a href="#!">Terms & Conditions</a></li>
+                <li><a href="#!">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+
+    <!-- jquery include -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/touchspin.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jqueryui.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
